@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+      <ul class="nav nav-tabs">
+        <li class="nav-item" >
+          <a class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" routerLink="/">Home</a>
+        </li>
+
+        <li class="nav-item" >
+          <a class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" routerLink="/heros">Hero</a>
+        </li>
+
+        <li class="nav-item" >
+          <a class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" [routerLink]="['/newHero']">Create Hero</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+      <!-- <app-heros></app-heros> -->
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- <button class="btn btn-primary">Click Me</button> -->
+<!-- <app-heros></app-heros>
+<app-create-hero></app-create-hero> -->
